@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <title>Mechanical Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Mechanical Engineering Student | Design | Heat and Mass Transfer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Mechanical Engineering student with a keen interest in design, heat and mass transfer. I thrive on solving real-world engineering challenges through innovation and creativity. My goal is to leverage my skills and knowledge in the mechanical field to contribute to impactful projects and continually grow as a professional.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Design:</strong> Proficient in CAD tools such as AutoCAD and SolidWorks for designing mechanical systems.</li>
+                <li><strong>Heat and Mass Transfer:</strong> Strong understanding of heat exchangers, thermal analysis, and fluid dynamics.</li>
+                <li><strong>Avid Learning:</strong> Always eager to learn new technologies and improve my skills.</li>
+                <li><strong>Leadership:</strong> Experience leading team projects and collaborating effectively in group settings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <h2>Project: Automated Sewerage Monitoring System</h2>
+            <p>
+                As part of my recent project, I worked on developing an automated sewerage monitoring system aimed at improving water management and preventing blockages in sewerage systems. This project involved designing sensors for real-time monitoring, data analysis for predictive maintenance, and creating a user-friendly interface for the system’s operation.
+            </p>
+            <p>
+                The project was a great opportunity to apply my knowledge in design and heat transfer, as I had to account for environmental factors and ensure the system's efficiency.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to connect or collaborate, feel free to reach out!</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name - Mechanical Engineering Student</p>
+        </div>
+    </footer>
+</body>
+</html>
