@@ -1,3 +1,4 @@
+
 :root {
   --accent: #2563eb;
   --mech: #b9340f;
@@ -43,11 +44,12 @@ body {
 }
 
 .hero:hover {
-  background: linear-gradient(135deg, #111827, #1e293b, #475569);
+  background: linear-gradient(115deg, #0f172a, #115e59, #14b8a6);
 }
 
-.hero:hover {
-  background: linear-gradient(115deg, #0f172a, #115e59, #14b8a6);
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
 }
 
 .role {
@@ -58,6 +60,8 @@ body {
 .summary {
   max-width: 720px;
   margin: 18px auto 28px;
+  font-size: 1.05rem;
+  color: #d1d5db;
 }
 
 /* LINKS */
@@ -97,16 +101,34 @@ body {
 .skill-card {
   background: #fff;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 12px;
   border-top: 6px solid var(--accent);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
 }
 
-.skill-card.mech { border-color: var(--mech); }
-.skill-card.auto { border-color: var(--auto); }
-.skill-card.prog { border-color: var(--prog); }
-.skill-card.tools { border-color: var(--tools); }
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+
+.skill-card.mech {
+  border-color: var(--mech);
+}
+
+.skill-card.auto {
+  border-color: var(--auto);
+}
+
+.skill-card.prog {
+  border-color: var(--prog);
+}
+
+.skill-card.tools {
+  border-color: var(--tools);
+}
+
 .skill-card.soft {
-  border-color: #0ed50b; 
+  border-color: #0ed50b;
 }
 
 .tags span {
@@ -119,6 +141,10 @@ body {
   font-size: 0.9rem;
 }
 
+.tags span:hover {
+  background: #dbeafe;
+}
+
 /* PROJECTS */
 .projects-grid {
   display: grid;
@@ -129,7 +155,8 @@ body {
 .project-card {
   background: #fff;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
 }
 
 .project-card:hover {
@@ -139,32 +166,60 @@ body {
 
 .project-sub {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+  font-weight: 500;
 }
 
-/* TIMELINE */
-.experience-center {
-  text-align: center;;
-}
-.experience-center .timeline {
-  border-left: none;
-  padding-left: 0;
-  margin-top: 30px;
+.project-card ul {
+  padding-left: 18px;
+  margin-top: 14px;
 }
 
-.experience-center .timeline-item {
-  max-width: 700px;
-  margin: 0 auto 30px;
+.project-card li {
+  margin-bottom: 8px;
+  color: var(--text-dark);
 }
+
+/* EXPERIENCE */
+.timeline {
+  border-left: 3px solid #dbe4f0;
+  padding-left: 28px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #dbeafe;
+}
+
+.timeline-item h3 {
+  margin-bottom: 6px;
+}
+
+.timeline-item .time {
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .timeline-item p {
-  font-weight: 650;
+  margin-top: 8px;
 }
-
-.experience-center .time {
-  display: block;
-  margin: 6px 0 12px;
-}
-
 
 /* BUTTON */
 .btn {
@@ -175,6 +230,7 @@ body {
   padding: 10px 22px;
   border-radius: 6px;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -188,6 +244,10 @@ body {
   padding-left: 20px;
 }
 
+.simple-list li {
+  margin-bottom: 10px;
+}
+
 /* FOOTER */
 footer {
   background: linear-gradient(
@@ -196,6 +256,7 @@ footer {
     #111827,
     #1f2937
   );
+
   color: #e5e7eb;
   text-align: center;
   padding: 35px 20px;
@@ -208,7 +269,6 @@ footer {
   transition: background 0.45s ease;
 }
 
-/* CLEAR but calm hover */
 footer:hover {
   background: linear-gradient(
     135deg,
@@ -217,3 +277,46 @@ footer:hover {
     #475569
   );
 }
+
+.footer-links a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #bfdbfe;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -28px;
+  }
+}
+
